@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-left">
+            <li>
+                <div class="header-Left">
+                    <div class="dropdown">
+                        <a href="#logo" id="logoName">Health Hub</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="nav-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a class="dropdown-item" href="#services">Services</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About us
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+
+                </ul>
+            </li>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" id="appletSearchBar" placeholder="Search..."
+                    aria-label="Search">
+
+            </form>
+           
+        </ul>
+    </nav>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Hub</title>
+        <style>
+            /* General Styles */
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            /* Full-Page Home Section */
+            #home {
+                height: 100vh; /* Full viewport height */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url('https://img.freepik.com/premium-vector/blue-shapes-simple-wallpaper-background_561408-440.jpg'); /* Path to your image */
+                background-size: cover; /* Ensure the image covers the entire section */
+                background-position: center; /* Center the image */
+                color: white;
+                text-align: center;
+            }
+    
+            #home .content h2 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+    
+            #home .content p {
+                font-size: 1.25rem;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+    
+            /* Optional: Style for responsiveness */
+            @media (max-width: 768px) {
+                #home .content h2 {
+                    font-size: 2.5rem;
+                }
+                #home .content p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Home Section -->
+        <section id="home" class="section home">
+            <div class="content">
+                <h2>Welcome to Health Hub</h2>
+                <p>Your go-to platform for all things health and wellness. Stay fit, stay healthy!</p>
+            </div>
+        </section>
+    
+        <!-- You can add other sections for the page content below, such as services, contact, etc. -->
+    </body>
+    </html>
+    
+    >
+
+<!-- Highlights Section -->
+<section id="highlights" class="section highlights">
+    <div class="content">
+        <h2>Highlights</h2>
+        <div class="highlight-cards">
+            <!-- Personalized Health Plans Card -->
+            <a href="https://dhwctalumni.org/wp-content/uploads/2018/10/PHP-Manual-Revised-2018.pdf" class="card">
+                <img src="https://healthylifeideas.com/wp-content/uploads/2020/04/goals-1200x675.jpg" alt="Personalized Health Plans Image" class="highlight-image">
+                <h3>Personalized Health Plans</h3>
+                <p>Get tailored plans based on your fitness goals, health status, and lifestyle.</p>
+            </a>
+
+            <!-- Nutrition and Meal Planning Card -->
+            <a href="https://www.everydayhealth.com/diet-nutrition/meal-planning/" class="card">
+                <img src="https://www.bellybelly.com.au/wp-content/uploads/2020/11/meal-planning.jpg" alt="Nutrition and Meal Planning Image" class="highlight-image">
+                <h3>Nutrition and Meal Planning</h3>
+                <p>Find recipes, meal plans, and grocery lists that fit your dietary needs.</p>
+            </a>
+
+            <!-- Mental Health Support Card -->
+            <a href="https://mentalhealthph.org/directory/listing/national-center-for-mental-health-ncmh/" class="card">
+                <img src="https://miro.medium.com/v2/resize:fit:1080/1*ifI-tF-K0wjn4SYcbsV6PA.png" alt="Mental Health Support Image" class="highlight-image">
+                <h3>Mental Health Support</h3>
+                <p>Access mindfulness exercises, stress relief techniques, and mental health resources.</p>
+            </a>
+
+            <!-- Fitness and Exercise Plans Card -->
+            <a href="https://www.bodybuilding.com/content/workout-plans-that-give-results.html" class="card">
+                <img src="https://familydoctor.org/wp-content/uploads/2016/11/exercise.jpg" alt="Fitness and Exercise Plans" class="highlight-image">
+                <h3>Fitness and Exercise Plans</h3>
+                <p>Customized fitness routines and exercises to help you stay active and healthy.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Full-Page Services Section -->
+<section id="services">
+    <div class="content">
+        <h2>Our Health Hub Services</h2>
+        <p>Discover our wide range of services designed to help you live a healthier and happier life. From personalized health plans to fitness and nutrition support, we have everything you need to achieve your health goals.</p>
+    </div>
+
+<style>
+    /* Full-Page Services Section */
+    #services {
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://img.freepik.com/premium-vector/modern-blue-abstract-background-template_181182-37042.jpg'); /* Path to your image */
+        background-size: cover; /* Ensure the image covers the entire section */
+        background-position: center; /* Center the image */
+        color: white;
+        text-align: center;
+    }
+
+    #services .content h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    #services .content p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Optional: Style for responsiveness */
+    @media (max-width: 768px) {
+        #services .content h2 {
+            font-size: 2.5rem;
+        }
+        #services .content p {
+            font-size: 1rem;
+        }
+    }
+</style>
+    <div id="health-hub" class="Lservices-section">
+        <div class="Lservices-text">
+            <p>Our Health Hub platform empowers individuals to take charge of their overall health by providing
+                a simple, effective way to monitor both their physical and emotional well-being. Through our comprehensive tools, users can track their moods, physical activities, nutrition, and sleep patterns.
+                These tools allow users to identify health trends, set personalized goals, and gain deeper insights into how their health affects their daily lives, behavior, and performance whether in school, at work,
+                or in personal activities.
+            </p>
+        </div>
+        
+        <div class="Lservices-image">
+            <img src="https://curioustimes.in/wp-content/uploads/2020/08/Nice-Whats-in-a-word.jpg" alt="Health Hub Image">
+        </div>
+
+        <p class="personalized-text">Comprehensive Health Tracking and Support</p>
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub - About Us</title>
+    <style>
+        /* Full-Page About Section */
+        #about {
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://img.freepik.com/premium-vector/modern-blue-abstract-background-template_181182-37064.jpg'); /* Path to your image */
+            background-size: cover; /* Ensure the image covers the entire section */
+            background-position: center; /* Center the image */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* About Content */
+        #about .content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #about .content p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meet Our Team Section */
+        #about .team {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .team-member {
+            width: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        /* Optional: Style for responsiveness */
+        @media (max-width: 768px) {
+            #about .content h2 {
+                font-size: 2.5rem;
+            }
+            #about .content p {
+                font-size: 1rem;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Us Section -->
+    <section id="about" class="section about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Health Hub is committed to empowering individuals to take control of their health and well-being. We provide personalized health plans, expert advice, and resources for fitness, nutrition, and mental health. Our goal is to help you achieve your wellness objectives and lead a healthier life.</p>
+        </div>
+
+        <!-- Meet Our Team -->
+        <div class="team">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/431198497_430113612908783_7460049929708180838_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGtRHlFOLypVLTBKLN3hdSfwFJDXcSXZn7AUkNdxJdmfjPDCklNo-CRdPUMhiGB0yrEE8urc-uIacZrHGOnhV3n&_nc_ohc=VWGQatqQROAQ7kNvgEg24-S&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=ArZR5RfiwGt8JJRP9EdLTzz&oh=00_AYAp7UpKGI-X3zPbFhyndlMfunmKWMyNEalpApGp3rvJQA&oe=674E6016" alt="Kien S. Salalima" class="team-img">
+                <h4>Kien S. Salalima</h4>
+                <p>Leading the Way to Better Health and Wellness</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/267733479_286382620124060_1194095900919614598_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEJ5_IpYvOQkyg9JhJiUZ74ZLlQoXOCixdkuVChc4KLFwUDogT8lyor9Z_ydvPaac7NnAYYNGIMB7EIVzbGW92W&_nc_ohc=YdJoV1Y_1UYQ7kNvgGn5d4e&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=Az9GGH1uNiIF3mLViGts5VZ&oh=00_AYCreYNjd-DWPlzHJx5LLlxHq6rs1WQBWsuUuBoTdCF4BQ&oe=674E4794" alt="Kean Daguino" class="team-img">
+                <h4>Kean Daguino</h4>
+                <p>Promoting Healthy Lifestyles for a Better Tomorrow</p>
+            </div>
+
+            <!-- Team Member  -->
+            <div class="team-member">
+                <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/468649629_584089847366558_8370317034326238514_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFG3i_ULCzlXcuoblnq8mRRqmDp9KrntB2qYOn0que0HYu7CBkIx902DbiE9BiyS8SScSVQbpYQuD3NuNb2-IwA&_nc_ohc=0vPWlWlHoNUQ7kNvgEj9cwl&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=AYZl6UQU5N-0aVE7vzMmCPP&oh=00_AYBsj95jh9AsJ-_vQo6pXtp0ArMS0xGJUkY_RS-yoirLAg&oe=674FEB59" alt="Kenneth Gamolo" class="team-img">
+                <h4>Kenneth Gamolo</h4>
+                <p>Inspiring Change for a Better Tomorrow</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+    </section>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub - Contact Us</title>
+    <style>
+        /* Full-Page Contact Section */
+        #contact {
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://img.freepik.com/premium-vector/modern-blue-abstract-background-template_181182-37064.jpg'); /* Path to your image */
+            background-size: cover; /* Ensure the image covers the entire section */
+            background-position: center; /* Center the image */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Contact Form Styling */
+        #contact .content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #contact .content p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        form label {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea, form .rating-container {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Rating Container */
+        .rating-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .rating-container input {
+            display: none;
+        }
+
+        .rating-container label {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #ddd;
+        }
+
+        .rating-container input:checked ~ label {
+            color: #FFD700; /* Gold color when checked */
+        }
+
+        .rating-container input:hover ~ label {
+            color: #FFD700; /* Gold color on hover */
+        }
+
+        /* Optional: Style for responsiveness */
+        @media (max-width: 768px) {
+            #contact .content h2 {
+                font-size: 2.5rem;
+            }
+
+            #contact .content p {
+                font-size: 1rem;
+            }
+
+            form {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out to us!</p>
+
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <!-- Rating Section -->
+                <label for="rating">Rating:</label>
+                <div class="rating-container">
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <label for="rating1">&#9733;</label>
+
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2">&#9733;</label>
+
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3">&#9733;</label>
+
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4">&#9733;</label>
+
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                    <label for="rating5">&#9733;</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+        <div class="applet-container">
+            <h3>Find us</h3>
+            <div id="map"></div>
+        </div>
+
+        <div class="contact-content">
+            <p>
+                <strong>Visit Us:</strong> Northern Bukidnon State College, Kihare, Tankulan, Manolo Fortich, Bukidnon,
+                8703<br>
+            </p>
+        </div>
+        <div class="copyright">
+            <p>All Rights Reserved 2024</p>
+        </div>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

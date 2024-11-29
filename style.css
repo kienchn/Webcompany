@@ -1,0 +1,880 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #34495e;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.highlights, .services, .about, .contact {
+    background-color: #ecf0f1;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+/* Highlights Section */
+.highlight-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Contact Section */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #16a085;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: 40px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13215f;
+    color: white;
+    padding: 13px;
+    position: sticky;
+    top: 0;
+    left: 0; 
+    z-index: 111;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a.active {
+    background-color: rgb(2, 2, 2);
+    color: rgb(245, 244, 244);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.nav-right li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.nav-right a:hover {
+    background-color:#5e6cad;
+    border-radius: 4px;
+}
+
+nav input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+nav button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    background-color: #ff1a1a;
+}
+
+.home-section {
+    background-image: url(Images/bk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(80vh - 99px);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensures content is centered horizontally */
+    position: relative;
+}
+
+.home-content {
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center the text horizontally */
+    font-size: 24px; /* Increase font size for better visibility */
+    padding-top: 20px; /* Adjust this value to move the text upwards or downwards */
+}
+
+.home-content p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+}
+
+
+
+.cont {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center;
+}
+
+.applet-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    width: 18rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+} 
+.card {
+    position: relative; /* Enable absolute positioning for the title */
+    margin-right: 5px;
+    margin-bottom: 10px; /* Space between rows */
+    height: 380px; /* Card height */
+    width: 180px; /* Card width */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #f4f4f4; /* Card border */
+    overflow: hidden; /* Prevent overflow */
+    transition: flex-grow 0.3s ease, transform 0.3s ease; /* Transition for growth and scaling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.highlights-section {
+    width: 100%;
+    height: 60vh; /* Adjusted height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative;
+    padding: 20px;
+}
+
+.highlights-section > div {
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+}
+
+.highlights-text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
+    padding: 15px; /* Adjust padding */
+    border-radius: 10px;
+    text-align: left; /* Left-align the text */
+    margin-right: 20px; /* Space between the text and the icon */
+    width: 60%; /* Adjusted width for the text */
+}
+
+.highlights-image {
+    display: flex;
+    align-items: center;
+}
+
+.highlights-section img {
+    width: 450px; /* Icon size */
+    height: 350px;
+    border: 5px solid #13215f; /* White border */
+}
+
+.highlights-section img + p {
+    color: rgb(241, 236, 231);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.Ahighlights-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative;
+    padding: 20px;
+}
+
+.Ahighlights-section > div {
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+}
+
+.Ahighlights-text {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    width: 80%; /* Match the width of the line (80%) */
+    margin: 0 auto;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px; /* Add spacing between galleries */
+}
+
+.image-container {
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    height: 350px; /* Fixed height */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Set height to fill container */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    transition: transform 0.3s; /* Smooth zoom effect */
+    border: 5px solid #13215f; /* White border */
+
+}
+
+.image-container:hover img {
+    transform: scale(1.05); /* Zoom on hover */
+}
+
+
+.services {
+    width: 100%;
+}
+
+.services-section {
+    background-image: url(Images/bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh; /* Adjusted height to allow space for the text */
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    position: relative; /* Allows the text container to be positioned correctly */
+}
+
+.services-text {
+    color: rgb(255, 255, 255); /* White text for contrast */
+    font-size: 150px; /* Extremely large font size */
+    font-weight: bold;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Larger shadow for readability */
+    padding: 30px 50px; /* Extra padding for large text */
+    border-radius: 8px; /* Rounded corners for the background */
+    text-align: center; /* Center-align the text inside the box */
+}
+
+
+.Lservices-section {
+    background-color: #003a6a;
+    width: 100%;
+    height: 70vh; /* Adjusted to provide more space for text and icon */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    position: relative;
+    padding: 15px;
+}
+
+.Lservices-text {
+    color: rgb(220, 221, 226);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
+    padding: 15px; /* Adjusted padding to reduce space inside the text box */
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2px; /* Reduced the bottom margin to bring text closer to the icon */
+    width: 80%; /* Ensure text container is not too wide */
+}
+
+.Lservices-section img {
+    width: 240px; /* Adjusted the size of the icon */
+    height: 220px; /* Ensure the height is proportional */
+    margin-top: 20px; /* Spacing between text and icon */
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #13215f; /* White border */
+}
+
+.Lservices-section p {
+    font-size: 18px; /* Adjust font size for description */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center-align the paragraph */
+    margin-top: 1px; /* Add some margin to ensure it's spaced from the icon */
+    width: 80%; /* Ensure the paragraph fits inside the container */
+    max-width: 800px; /* Optional: Prevent the text from being too wide */
+}
+@media (max-width: 768px) {
+    .services-section {
+        height: 50vh; /* Adjust image height for smaller screens */
+    }
+
+    .services-text {
+        font-size: 48px; /* Slightly smaller for mobile */
+        bottom: 30px;    /* Adjust bottom space for mobile */
+        left: 30px;      /* Adjust left space for mobile */
+        padding: 12px 25px; /* Adjust padding for mobile */
+    }
+
+    .Lservices-section {
+        height: 70vh; /* Adjust height for smaller screens */
+    }
+
+    .Lservices-text {
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 15px 25px; /* Adjust padding for mobile */
+        margin-bottom: 20px; /* Reduce space between text and icon on mobile */
+    }
+
+    .Lservices-section img {
+        width: 100px; /* Adjust the size of the icon on mobile */
+        height: 100px; /* Adjust height for mobile */
+        margin-top: 15px; /* Reduce the margin on mobile */
+    }
+}
+
+
+
+.about {
+    width: 100%;
+}
+
+
+.about-section {
+    background-image: url(Images/bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh; /* Adjusted height to allow space for the text */
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    position: relative; /* Allows the text container to be positioned correctly */
+}
+.team {
+    display: flex; /* Use flexbox to align images side by side */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-img {
+    width: 250px; /* Set a fixed width for all images */
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the images are not distorted */
+    border-radius: 50%; /* Make the images circular */
+}
+
+.team-member {
+    margin: 10px; /* Space between team members */
+    text-align: center; /* Center the text under the images */
+}
+
+.about-text {
+    color: rgb(255, 255, 255); /* White text for contrast */
+    font-size: 150px; /* Extremely large font size */
+    font-weight: bold;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Larger shadow for readability */
+    padding: 30px 50px; /* Extra padding for large text */
+    border-radius: 8px; /* Rounded corners for the background */
+    text-align: center; /* Center-align the text inside the box */
+}
+
+.about-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #333;
+    width: 80%; /* Match the width of the line (80%) */
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    width: 100%; /* Make the paragraph width match the parent container */
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        height: 40vh; /* Adjust image height for smaller screens */
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+.gallery-line {
+    width: 80%; /* Match the width of the text block */
+    height: 2px; /* Thickness of the line */
+    background-color: #1b1313; /* Color of the line */
+    margin: 10px auto; /* Auto margin for centering the line horizontally */
+    border: none; /* Remove default border */
+}
+
+
+.mv {
+    width: 100%;
+}
+
+.mv-section {
+    background-image: url(Images/bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh; /* Adjusted height to allow space for the text */
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    position: relative; /* Allows the text container to be positioned correctly */
+}
+.mv-text {
+    color: rgb(255, 255, 255); /* White text for contrast */
+    font-size: 150px; /* Extremely large font size */
+    font-weight: bold;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Larger shadow for readability */
+    padding: 30px 50px; /* Extra padding for large text */
+    border-radius: 8px; /* Rounded corners for the background */
+    text-align: center; /* Center-align the text inside the box */
+}
+
+.mv-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #333;
+    width: 80%; /* Match the width of the line (80%) */
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.mv-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mv-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    width: 100%; /* Make the paragraph width match the parent container */
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .mv-section {
+        height: 40vh; /* Adjust image height for smaller screens */
+    }
+
+    .mv-content h2 {
+        font-size: 28px;
+    }
+
+    .mv-content p {
+        font-size: 16px;
+    }
+}
+
+.gallery-line {
+    width: 80%; /* Match the width of the text block */
+    height: 2px; /* Thickness of the line */
+    background-color: #1b1313; /* Color of the line */
+    margin: 10px auto; /* Auto margin for centering the line horizontally */
+    border: none; /* Remove default border */
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact-section {
+    background-image: url(Images/bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh; /* Adjusted height to allow space for the text */
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    position: relative; /* Allows the text container to be positioned correctly */
+}
+.contact-text {
+    color: rgb(255, 255, 255); /* White text for contrast */
+    font-size: 150px; /* Extremely large font size */
+    font-weight: bold;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Larger shadow for readability */
+    padding: 30px 50px; /* Extra padding for large text */
+    border-radius: 8px; /* Rounded corners for the background */
+    text-align: center; /* Center-align the text inside the box */
+}
+.contact-content {
+    background-color: #003a6a;
+    width: 100%;
+    height: 60vh; /* Adjusted to provide more space for text and icon */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    position: relative;
+    padding: 20px;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    background-color: #003a6a;
+    width: 100%;
+    min-height: 60vh; /* Use min-height for flexibility */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    position: relative;
+    padding: 20px;
+    color: white; /* Ensure text is readable on dark background */
+}
+
+
+@media (max-width: 768px) {
+    .contact-section {
+        height: 40vh; /* Adjust image height for smaller screens */
+    }
+
+    .contact-content h2 {
+        font-size: 28px;
+    }
+
+    .contact-content p {
+        font-size: 16px;
+    }
+}
+
+.applet-container {
+
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(27, 27, 27);
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#map {
+height: 300px;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background-color: #13215f;
+    color: rgb(255, 255, 255);
+}
+.highlight-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#highlights {
+    background-image: url('https://img.freepik.com/premium-vector/modern-blue-abstract-background-template_181182-37042.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Full-Page Highlights Section */
+#highlights {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/premium-vector/modern-blue-abstract-background-template_181182-37064.jpg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    color: white;
+    text-align: center;
+}
+
+#highlights .content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#highlights .content p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Optional: Style for responsiveness */
+@media (max-width: 768px) {
+    #highlights .content h2 {
+        font-size: 2.5rem;
+    }
+    #highlights .content p {
+        font-size: 1rem;
+    }
+}
+
+#services .content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#services .content p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Full-Page Health Hub Section */
+.Lservices-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-image: url('https://img.freepik.com/premium-vector/modern-blue-abstract-background-template_181182-37049.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.Lservices-text {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.Lservices-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Personalized Text Styling */
+.personalized-text {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+/* Optional: Style for responsiveness */
+@media (max-width: 768px) {
+    #services .content h2 {
+        font-size: 2.5rem;
+    }
+    #services .content p {
+        font-size: 1rem;
+    }
+
+    .Lservices-section {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .Lservices-text {
+        margin-right: 0;
+    }
+
+    .Lservices-image img {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px 0;
+    }
+}
+
